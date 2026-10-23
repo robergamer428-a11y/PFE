@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+}
+
+.calculadora {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora-card {
+  width: 380px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.calculadora-card h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.calculadora-card p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.calculadora-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.botoes button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #0070f3;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  background: #0059c9;
+}
+
+.limpar {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #555;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.limpar:hover {
+  background: #333;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e8f4ff;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.erro {
+  margin-top: 20px;
+  padding: 15px;
+  background: #ffe5e5;
+  color: #c00000;
+  border-radius: 8px;
+  font-weight: bold;
+}
